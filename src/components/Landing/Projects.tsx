@@ -1,6 +1,7 @@
 import React from 'react'
 import { Icons } from '../icons'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const projects = [
     { title: 'DSA tracker', description: 'A platform to practice and track progress in Data Structures and Algorithms. Built using Next.js, MongoDB, and Next-Auth, this responsive web app allows users to log in securely, explore various DSA topics, and monitor their completion status. Users can also upload and manage their own custom DSA sheets, making it a personalized tool for coding preparation and interview readiness.', href: '/projects/dsa-tracker' },
@@ -10,11 +11,22 @@ const projects = [
 
 const Projects = () => {
     return (
-        <section className='grid grid-cols-1 sm1:grid-cols-3 gap-2'>
+        <section id="projects" className='grid grid-cols-1 sm1:grid-cols-3 gap-2'>
             <h1 className='w-full col-span-1 sm1:col-span-3 text-center bg-backgroundReverse text-foregroundReverse text-xl'>Projects</h1>
             {projects.map((project) => (
                 <GetProject key={project.title} title={project.title} description={project.description} href={project.href} />
             ))}
+
+            <article className='col-span-1 sm1:col-span-3 w-full add-bg flex flex-col justify-center items-center'>
+                <Image
+                    src="/HireMe.png"
+                    alt="Staml image"
+                    width={300}
+                    height={600}
+                    className="max-w-full"
+                    priority={true}
+                />
+            </article>
         </section>
     )
 }
@@ -23,7 +35,7 @@ export default Projects
 
 const GetProject = ({ title, description, href }: { title: string, description: string, href: string }) => {
     return (
-        <article id="projects" className="col-span-1 w-full border-2 p-2 m-2 rounded-lg">
+        <article className="col-span-1 w-full border-2 p-2 m-2 rounded-lg">
             <section className="border-2 border-dashed h-full p-2 rounded-lg flex flex-col justify-between">
                 <div>
                     <h2 className="w-full italic font-bold">{title}</h2>

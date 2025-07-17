@@ -2,7 +2,7 @@ import React from 'react'
 
 const Summary = () => {
     return (
-        <article className="w-full flex flex-col sm1:flex-row">
+        <article id="summary" className="w-full flex flex-col sm1:flex-row">
             <section className="basis-3/5 p-2 flex flex-col border-b  sm1:border-none">
                 <h1 className='w-full text-2xl font-bold flex flex-col tracking-2'>
                     <span className='w-full text-center'>Scalable UIs with Custom</span>

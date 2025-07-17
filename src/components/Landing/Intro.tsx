@@ -3,15 +3,15 @@ import React from 'react';
 
 const Intro = () => {
     return (
-        <section className="flex flex-col md1:flex-row p-2 m-2 border-t ">
-            <article className="basis-1/2 pr-6 space-y-4 border-b  md1:border-none pb-2">
+        <section id="intro" className="flex flex-col sm:flex-row p-2 m-2 border-t ">
+            <article className="basis-1/2 pr-6 space-y-4 border-b  sm:border-none pb-2">
                 <h2 className="text-3xl font-bold uppercase tracking-wide flex items-center">Technical<br /> Edge
                     <Image
                         src="/Frontend.png"
                         alt="Staml image"
                         width={100}
                         height={100}
-                        className="rounded-full"
+                        className="rounded-full w-1/5 xs:w-fit"
                         priority={true}
                     />
                 </h2>
@@ -26,14 +26,14 @@ const Intro = () => {
                 </button>
             </article>
 
-            <article className="basis-1/2 pl-6 space-y-4 md1:border-l pb-2">
+            <article className="basis-1/2 pl-6 space-y-4 sm:border-l pb-2">
                 <h2 className="text-3xl font-bold uppercase tracking-wide flex items-center">Latest<br />  Releases
                     <Image
                         src="/NewArrivals.png"
                         alt="Staml image"
                         width={100}
                         height={100}
-                        className="rounded-full"
+                        className="rounded-full w-1/5 xs:w-fit"
                         priority={true}
                     />
                 </h2>

@@ -17,12 +17,34 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: "1vw";
+  text-overflow: ellipsis;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.add-bg {
+  background-color: #d7c7af;
+  opacity: 1;
+  background-image: repeating-linear-gradient(
+      45deg,
+      #aa9d8a 25%,
+      transparent 25%,
+      transparent 75%,
+      #aa9d8a 75%,
+      #aa9d8a
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #aa9d8a 25%,
+      #d7c7af 25%,
+      #d7c7af 75%,
+      #aa9d8a 75%,
+      #aa9d8a
+    );
+  background-position: 0 0, 16px 16px;
+  background-size: 32px 32px;
 }

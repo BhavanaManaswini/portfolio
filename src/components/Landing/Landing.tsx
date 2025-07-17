@@ -2,7 +2,9 @@ import React from 'react'
 import Summary from './Summary'
 import Intro from './Intro'
 import Projects from './Projects'
-import Experience from './Experience'
+import Services from './Services'
+import AboutMe from './AboutMe'
+import Skills from './Skills'
 
 const Landing = () => {
     return (
@@ -10,7 +12,9 @@ const Landing = () => {
             <Summary />
             <Intro />
             <Projects />
-            <Experience />
+            <Services />
+            <Skills />
+            <AboutMe />
         </>
     )
 }
