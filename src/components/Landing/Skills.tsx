@@ -23,7 +23,7 @@ const skills = [
 
 const Skills = () => {
     return (
-        <section id="skills" className="p-2 pb-8">
+        <section id="skills" className="p-2 pb-8 overflow-hidden">
             <h1 className='w-full text-center bg-backgroundReverse text-foregroundReverse text-xl mb-2'>Skills <Icons.and className='inline size-4' /> Tools</h1>
             <section className="flex flex-wrap gap-8 justify-center items-center">
                 {skills.map((skill) => (

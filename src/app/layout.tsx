@@ -16,6 +16,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-serif p-2">
+        <svg width="0" height="0" style={{ position: 'absolute' }}>
+          <filter id="noiseFilter">
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="10"
+              numOctaves="1"
+              stitchTiles="stitch"
+            />
+          </filter>
+        </svg>
         <Header />
         {children}
         <Footer />

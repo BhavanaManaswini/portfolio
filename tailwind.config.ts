@@ -18,6 +18,7 @@ const config: Config = {
         backgroundReverse: "var(--foreground)",
       },
       screens: {
+        'xs': '400px',
         'sm1': '630px',
         'md1': '900px',
         'md2': '1000px',
@@ -52,10 +53,13 @@ const config: Config = {
           "100%": {
             transform: "rotate(-3deg)"
           },
-        }
+        },
       }
     },
   },
   plugins: [],
 };
 export default config;
+
+// image transform
+// class="rounded-xl  rotate-6 hover:rotate-0 duration-500 hover:-translate-y-12 h-full w-full object-cover hover:scale-150 transform origin-bottom"

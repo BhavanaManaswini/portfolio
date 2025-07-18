@@ -19,9 +19,9 @@ const Summary = () => {
                 </article>
             </section>
 
-            <section className="basis-2/5 p-2 sm1:border-l  flex flex-col">
+            <section className="basis-2/5 p-2 sm1:border-l flex flex-col">
                 <article className="text-base font-thin">
-                    <span className='float-left text-3xl'>R</span>esults driven Frontend Developer with 3 years of experience building high-performance, scalable web applications using React.js, Next.js, JavaScript, and TypeScript. Adept in optimizing UI performance, state management, cross-browser responsive designs. Passionate about clean code, and UI/UX best practices.
+                    <span className='float-left text-3xl'>I&apos;</span>m a results driven Frontend Developer with 3 years of experience building high-performance, scalable web applications using React.js, Next.js, JavaScript, and TypeScript. Adept in optimizing UI performance, state management, cross-browser responsive designs. Passionate about clean code, and UI/UX best practices.
                 </article>
                 <article className="flex-1 bg-[url('/skills-bg.png')] bg-contain bg-[length:50px_50px] bg-center font-thin text-center flex items-center justify-center grayscale-[200]">
                 </article>

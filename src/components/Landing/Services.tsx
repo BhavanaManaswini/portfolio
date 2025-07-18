@@ -36,13 +36,13 @@ const services = [
 
 const Services = () => {
     return (
-        <section id="services" className="p-2">
+        <section id="services" className="mt-2">
             <h1 className='w-full text-center bg-backgroundReverse text-foregroundReverse text-xl mb-2'>Services</h1>
             <div className="flex flex-wrap justify-center">
                 {services.map((service, index) => (
                     <article
                         key={index}
-                        className={`flex-grow w-full sm:w-1/3 p-6 border-b sm:${index == 0 || index == 3 ? '' : 'border-l'}`}
+                        className={`flex-grow w-full sm:w-1/3 p-6 sm:${index == 0 || index == 3 ? '' : 'border-l'}`}
                     >
                         <h2 className="text-xl font-semibold mb-2 flex justify-center items-center">
                             {service.icon}{service.title}
