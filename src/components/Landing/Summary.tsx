@@ -5,7 +5,18 @@ const Summary = () => {
         <article id="summary" className="w-full flex flex-col sm1:flex-row">
             <section className="basis-3/5 p-2 flex flex-col border-b  sm1:border-none">
                 <h1 className='w-full text-2xl font-bold flex flex-col tracking-2'>
-                    <span className='w-full text-center'>Scalable UIs with Custom</span>
+                    <span className='w-full text-center'>
+                        <span className="max-h-9 inline-flex flex-col overflow-hidden">
+                            <ul className="block animate-text-slide">
+                                <li>Scalable</li>
+                                <li>Interactive</li>
+                                <li>Responsive</li>
+                                <li>Dynamic</li>
+                                <li>Elegant</li>
+                                <li>Intuitive</li>
+                            </ul>
+                        </span>
+                        UIs with Custom</span>
                     <span className='w-full text-center text-[10vw] sm1:text-6xl flex justify-center items-center bg-backgroundReverse text-foregroundReverse text-6xl uppercase tracking-[0.5vw]'>
                         Web Solutions
                     </span>
