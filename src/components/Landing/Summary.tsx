@@ -6,14 +6,14 @@ const Summary = () => {
             <section className="basis-3/5 p-2 flex flex-col border-b  sm1:border-none">
                 <h1 className='w-full text-2xl font-bold flex flex-col tracking-2'>
                     <span className='w-full text-center'>
-                        <span className="max-h-9 inline-flex flex-col overflow-hidden">
+                        <span className="max-h-[2.3rem] mx-2 inline-flex flex-col overflow-hidden">
                             <ul className="block animate-text-slide">
-                                <li>Scalable</li>
-                                <li>Interactive</li>
-                                <li>Responsive</li>
-                                <li>Dynamic</li>
-                                <li>Elegant</li>
-                                <li>Intuitive</li>
+                                <li className='text-end'>Scalable</li>
+                                <li className='text-end'>Interactive</li>
+                                <li className='text-end'>Responsive</li>
+                                <li className='text-end'>Dynamic</li>
+                                <li className='text-end'>Elegant</li>
+                                <li className='text-end'>Intuitive</li>
                             </ul>
                         </span>
                         UIs with Custom</span>

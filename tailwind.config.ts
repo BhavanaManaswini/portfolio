@@ -28,7 +28,7 @@ const config: Config = {
         'infinite-scroll': 'infinite-scroll 25s linear infinite',
         typing: "typing 30s",
         wiggle: 'wiggle 1s ease-in-out infinite',
-        'text-slide': 'text-slide 12.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+        'text-slide': 'text-slide 12.5s cubic-bezier(0.83, 0, 0.17, 1) 3s infinite',
       },
       keyframes: {
         'infinite-scroll': {

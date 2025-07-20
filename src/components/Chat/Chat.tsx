@@ -3,6 +3,7 @@
 import { useChat } from "ai/react"
 import { useEffect, useRef } from "react"
 import MyMarkdown from "../Markdown/Markdown"
+import Loader from "../Loader/Loader"
 
 const Chat = () => {
 
@@ -16,7 +17,7 @@ const Chat = () => {
     const bottomRef = useRef<HTMLDivElement | null>(null)
 
     useEffect(() => {
-        bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
+        if (messages.length > 0) bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
     }, [messages])
 
     return (
@@ -34,16 +35,19 @@ const Chat = () => {
                             ) : (
                                 <li key={m.id} className="flex flex-row">
                                     <div className="rouded-t-lg rounded-r-lg rounded-tl-lg p-1 bg-background shadow-md flex flex-col w-3/4">
-                                        {isLoading ? (
-                                            <div>Loading...</div>
-                                        ) : (
-                                            <MyMarkdown>{m.content}</MyMarkdown>
-                                        )}
+                                        <MyMarkdown>{m.content}</MyMarkdown>
                                     </div>
                                 </li>
                             )}
                         </div>
                     ))}
+                    {isLoading && (
+                        <li className="flex flex-row">
+                            <div className="rouded-t-lg rounded-r-lg rounded-tl-lg p-1 bg-background shadow-md flex flex-col w-3/4">
+                                <Loader />
+                            </div>
+                        </li>
+                    )}
                     <div ref={bottomRef} />
                 </ul>
             </section>
@@ -52,8 +56,8 @@ const Chat = () => {
                     <input
                         value={input}
                         onChange={handleInputChange}
-                        placeholder="Type your question here..."
-                        className="w-full flex-1 rounded-lg border bg-transparent px-3 py-2.5 text-sm text-foregroundReverse outline-none transition-colors focus:border-stone-500 focus:outline-none disabled:border-0"
+                        placeholder="Curious about me? Just ask!"
+                        className="w-full flex-1 rounded-lg border bg-transparent px-3 py-2.5 text-sm text-foregroundReverse outline-none transition-colors border-stone-500 focus:outline-none disabled:border-0"
                     />
                     <button className="m-1 p-1 rounded-lg bg-background" type="submit">
                         Submit
