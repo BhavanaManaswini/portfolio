@@ -51,7 +51,7 @@ const AboutMe = () => {
                         </article>
                         <article className="flex flex-col col-span-1 sm:col-span-2 md2:col-span-1">
                             <h1 className='w-full text-center bg-backgroundReverse text-foregroundReverse mb-2'>Ask away</h1>
-                            <article className='flex-1 min-h-64 md2:max-h-64 bg-backgroundReverse'>
+                            <article className='flex-1 min-h-64 max-h-64 overflow-hidden bg-backgroundReverse'>
                                 <Chat />
                             </article>
                         </article>

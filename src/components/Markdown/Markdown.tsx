@@ -18,7 +18,7 @@ export default function MyMarkdown({ children }: { children: any }) {
                 p({ node, ...props }) {
                     return (
                         <p
-                            className="my-4 leading-relaxed text-base"
+                            className="leading-relaxed text-base"
                             {...props}
                         />
                     );
@@ -28,7 +28,7 @@ export default function MyMarkdown({ children }: { children: any }) {
                     const lang = match?.[1];
                     if (match) {
                         return (
-                            <div className="my-4 rounded-lg overflow-auto text-sm relative bg-stone-200">
+                            <div className="my-4 rounded-lg overflow-auto text-sm relative bg-white m-4">
                                 <button className="border rounded-lg absolute right-2 top-2" onClick={() => copyToClipboard(String(children).replace(/\n$/, ""))}>Copy</button>
                                 <SyntaxHighlighter
                                     language={lang}
