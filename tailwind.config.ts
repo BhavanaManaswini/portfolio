@@ -29,6 +29,7 @@ const config: Config = {
         typing: "typing 30s",
         wiggle: 'wiggle 1s ease-in-out infinite',
         'text-slide': 'text-slide 12.5s cubic-bezier(0.83, 0, 0.17, 1) 3s infinite',
+        wave: 'wave 1.2s ease-in-out infinite',
       },
       keyframes: {
         'infinite-scroll': {
@@ -74,6 +75,10 @@ const config: Config = {
           '100%': {
             transform: 'translateY(-83.33%)',
           },
+        },
+        wave: {
+          '0%, 40%, 100%': { transform: 'scaleY(0.4)' },
+          '20%': { transform: 'scaleY(1)' },
         },
       }
     },

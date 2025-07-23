@@ -35,36 +35,32 @@ export default Projects
 
 const GetProject = ({ title, description, href }: { title: string, description: string, href: string }) => {
     return (
-        <>
-            <div
-                className="group [perspective:1000px]"
-            >
-                <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                    {/* Front face with text */}
-                    <article className="col-span-1 w-full h-full border-2 p-2 rounded-lg">
-                        <section className="border-2 border-dashed h-full p-2 rounded-lg flex flex-col justify-between">
-                            <div>
-                                <h2 className="w-full italic font-bold">{title}<Icons.cursor className='size-6 inline mx-2' /></h2>
-                                <p className="font-mono text-sm">{description}</p>
-                            </div>
-                        </section>
-                    </article>
-                    {/* Back face with image */}
-                    <div
-                        className="absolute inset-0 h-full w-full rounded-lg [transform:rotateY(180deg)] [backface-visibility:hidden] bg-cover bg-center border-2 border-black"
-                        style={{ backgroundImage: `url(/${title.replace(/ /g, "-").toLowerCase()}.png)` }}
+        <section className="group">
+            <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                {/* Front face with text */}
+                <article className="col-span-1 w-full h-full border-2 p-2 rounded-lg">
+                    <section className="border-2 border-dashed h-full p-2 rounded-lg flex flex-col justify-between">
+                        <div>
+                            <h2 className="w-full italic font-bold">{title}<Icons.cursor className='size-6 inline mx-2' /></h2>
+                            <p className="font-mono text-sm">{description}</p>
+                        </div>
+                    </section>
+                </article>
+                {/* Back face with image */}
+                <div
+                    className="absolute inset-0 h-full w-full rounded-lg [transform:rotateY(180deg)] [backface-visibility:hidden] bg-cover bg-center border-2 border-black"
+                    style={{ backgroundImage: `url(/${title.replace(/ /g, "-").toLowerCase()}.png)` }}
+                >
+                    <Link
+                        href={href}
+                        className={`bg-black/80 backdrop-blur-xs h-full text-foregroundReverse flex w-full justify-center items-center rounded-md`}
                     >
-                        <Link
-                            href={href}
-                            className={`bg-black/80 backdrop-blur-xs h-full text-foregroundReverse flex w-full justify-center items-center rounded-md`}
-                        >
-                            <p className='w-full bg-black text-foregroundReverse p-2 text-center'>Know More <Icons.forward className="size-6 inline" /></p>
-                        </Link>
+                        <p className='w-full bg-black text-foregroundReverse p-2 text-center'>Know More <Icons.forward className="size-6 inline" /></p>
+                    </Link>
 
-                    </div>
                 </div>
             </div>
-        </>
+        </section>
 
     )
 }

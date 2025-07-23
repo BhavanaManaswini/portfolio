@@ -11,8 +11,11 @@ const GetInTouch = () => {
                 <li>
                     Touch
                 </li>
-                <li className="bg-backgroundReverse text-foregroundReverse rounded-lg p-2">
-                    EMAIL
+                <li>
+                    -
+                </li>
+                <li className="bg-backgroundReverse text-foregroundReverse rounded-lg p-2 cursor-pointer">
+                    <a href="mailto:bhavanamanaswi@gmail.com">EMAIL</a>
                 </li>
                 <li>
                     Need
@@ -37,8 +40,11 @@ const GetInTouch = () => {
                 <li>
                     Touch
                 </li>
-                <li className="bg-backgroundReverse text-foregroundReverse rounded-lg p-2">
-                    EMAIL
+                <li>
+                    -
+                </li>
+                <li className="bg-backgroundReverse text-foregroundReverse rounded-lg p-2 cursor-pointer">
+                    <a href="mailto:bhavanamanaswi@gmail.com">EMAIL</a>
                 </li>
                 <li>
                     Need

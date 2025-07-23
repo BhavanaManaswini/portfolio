@@ -5,7 +5,7 @@ const Header = () => {
             <header className='w-full grid grid-cols-2 md:grid-cols-6'>
                 <GetDay />
                 <h1 className='min-h-20 col-span-2 md:col-span-4 text-5xl items-center text-center flex flex-col border-b '>
-                    The Dev Times
+                    Frontend Developer
                     <p className='text-sm'>Est. 2022 – You Design. I Develop.</p>
                 </h1>
                 <GetSpecialEdition />

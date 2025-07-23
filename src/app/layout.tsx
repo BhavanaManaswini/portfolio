@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-serif p-2">
+      <body className="font-serif p-2 px-4">
         <svg width="0" height="0" style={{ position: 'absolute' }}>
           <filter id="noiseFilter">
             <feTurbulence

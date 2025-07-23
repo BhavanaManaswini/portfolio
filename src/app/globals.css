@@ -9,7 +9,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #171717;
     --foreground: #d7c7af;
   }
 }
@@ -88,4 +88,12 @@ body::before {
 .scrollbar-hide {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+.maplibregl-popup-content {
+  background: #171717 !important;
+  border-radius: 5rem;
+  padding: 0;
+  pointer-events: auto;
+  position: relative;
 }

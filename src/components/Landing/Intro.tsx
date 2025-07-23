@@ -18,7 +18,7 @@ const Intro = () => {
                     />
                 </h2>
                 <p className="text-lg leading-relaxed">
-                    Specialized in building intuitive, interactive, and responsive interfaces that elevate user experience with a keen eye for detail.
+                    Specialized in building interactive, and responsive interfaces that elevate user experience with a keen eye for detail.
                 </p>
                 <p className="italic text-stone-900">
                     Discover the tools & frameworks that shape my development approach.

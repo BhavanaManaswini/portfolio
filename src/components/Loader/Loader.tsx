@@ -2,12 +2,14 @@ import React from 'react'
 
 const Loader = () => {
     return (
-        <div className='flex space-x-2 justify-center items-center'>
-            <span className='sr-only'>Loading...</span>
-            <div className='h-4 w-4 bg-backgroundReverse rounded-full animate-bounce [animation-delay:-0.3s]'></div>
-            <div className='h-4 w-4 bg-backgroundReverse rounded-full animate-bounce [animation-delay:-0.15s]'></div>
-            <div className='h-4 w-4 bg-backgroundReverse rounded-full animate-bounce'></div>
+        <div className="flex gap-1 items-center h-8 w-fit">
+            <div className="w-1 h-full bg-background animate-wave [animation-delay:0s]"></div>
+            <div className="w-1 h-full bg-background animate-wave [animation-delay:0.1s]"></div>
+            <div className="w-1 h-full bg-background animate-wave [animation-delay:0.2s]"></div>
+            <div className="w-1 h-full bg-background animate-wave [animation-delay:0.3s]"></div>
+            <div className="w-1 h-full bg-background animate-wave [animation-delay:0.4s]"></div>
         </div>
+
     )
 }
 

@@ -3,17 +3,21 @@ import Summary from './Summary'
 import Intro from './Intro'
 import Projects from './Projects'
 import Services from './Services'
-import AboutMe from './AboutMe'
 import Skills from './Skills'
+import EducationExperience from './EducationExperience'
+import Curious from './Curious'
+import AboutMe from './AboutMe'
 
 const Landing = () => {
     return (
         <>
             <Summary />
             <Intro />
+            <Skills />
             <Projects />
             <Services />
-            <Skills />
+            <EducationExperience />
+            <Curious />
             <AboutMe />
         </>
     )
