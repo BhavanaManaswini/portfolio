@@ -4,7 +4,7 @@ const Page = ({ params }: { params: { project: string } }) => {
 
     const { project } = params
     return (
-        <main className="flex flex-col w-full bg-background h-[calc(90vh)]">
+        <main className="flex flex-col w-full bg-background min-h-[calc(90vh)]">
             {project}
         </main>
     )

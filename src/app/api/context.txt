@@ -61,7 +61,7 @@ Currently working on a large-scale banking application with a microfrontend arch
 7.	Ensured accessibility compliance (WCAG 2.1 AA) with proper contrast ratios and keyboard navigation.
 8.	Collaborated with backend teams and integrated APIs using axios.
 9.	Conducted performance audits using Lighthouse.
-10.	Integrated REST APIs using Fetch, handling asynchronous operations with Promises and error handling..
+10.	Built custom, reusable components to enhance consistency across the application, and improve maintainability."
 Tech Stack: React.js, JavaScript, Microfrontends, Jest, RTL, CSS-in-JS
 Tools: VS Code, Git, GitHub, Jenkins
 
@@ -97,7 +97,7 @@ Formik + yup for custom DSA cheat sheet (excel sheet) data validation
 Tech Stack:
 Frontend: Next.js, TypeScript, Tailwind CSS, Redux, React Hook Form, Formik, Zod, Yup, React Query, React Table, Shadcn
 Backend: Next.js API routes, MongoDB, Mongoose
-Tools: ExcelJS (for spreadsheet handling), Recharts
+Tools: ExcelJS (for spreadsheet handling), Recharts, Vercel (Deployment)
 
 Live link: https://dsatracker-upyourgame.vercel.app/
 Credentails: test@gmail.com(email), Test@123(password)
@@ -127,7 +127,7 @@ Fallback Loader for interactive UI
 Tech Stack:
 Frontend: React.js, Javascript, Material UI, Tailwind CSS, 
 Backend: Node.js, Express.js, MongoDB, JWT
-Tools: Cloudinary, jspdf
+Tools: Cloudinary, jspdf, Vercel (Backend Deployment), Netlify(Frontend Deployment))
 
 Live Link: https://scriptoria-mern.netlify.app/login
 Credentials: admin@gmail.com(email), Admin@123(password)
@@ -177,18 +177,23 @@ Clean Code
 Problem Solving
  
 **Let’s Connect:**  
-For project details or code samples:  
+
 - Email: bhavanamanaswi@gmail.com  
+- Phone: +91 9100532241
 - LinkedIn: [linkedin.com/in/bhavana-manaswini-p](https://www.linkedin.com/in/bhavana-manaswini-p-819103206/)
 
 **More Details about me**
 
-I was born on 15th April 2001. I'm based in Hyderbad, Telangana, India.
-I love playing Badminton
-Listening to music is my recharge
+I was born on 15th April 2001. I'm based in Hyderabad, Telangana, India.
+I love playing Badminton.
+Listening to music is my recharge.
 
 **More details about company**
 Working at Capgemini for last 3 years
 Notice period is 90 days
 Currently not serving Notice period (Did not resign)
 Location: Gachibowli, Hyderabad, Telangana, India
+
+**My job Preferences**
+Looking for Frontend Developer / React.js Developer / Next.js Developer roles
+Preferred location: Remote (or) Hyderabad, but willing to relocate
