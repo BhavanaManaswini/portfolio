@@ -4,6 +4,8 @@ import { useChat } from "ai/react"
 import MyMarkdown from "../Markdown/Markdown"
 import Loader from "../Loader/Loader"
 
+const questions = ['What is your total experience?', 'Can you share your Next.js experience?', 'Have you worked with react hooks?']
+
 const Chat = () => {
 
     const { messages, input, handleInputChange, handleSubmit, isLoading } = useChat({
@@ -13,9 +15,16 @@ const Chat = () => {
         }
     })
 
+
+    const handleQuestionClick = (question: string) => {
+        handleInputChange({ target: { value: question } } as React.ChangeEvent<HTMLInputElement>);
+        setTimeout(() => handleSubmit(), 0);
+    };
+
+
     return (
         <section className="flex flex-col h-full h-96 overflow-hidden bg-backgroundReverse text-foregroundReverse rounded-lg">
-            <section className="flex flex-col w-full overflow-hidden flex-1">
+            <section className="flex flex-col w-full overflow-hidden flex-1 relative">
                 <ul className="h-full flex-grow rounded-lg overflow-y-auto scrollbar-hide flex flex-col gap-4 px-4 py-2 min-h-80 max-h-80">
                     {messages.map((m, index) => (
                         <div key={index}>
@@ -42,6 +51,13 @@ const Chat = () => {
                         </li>
                     )}
                 </ul>
+                {messages.length === 0 && (
+                    <section className="absolute bottom-0 w-full flex flex-wrap gap-2 justify-center">
+                        {questions.map(q => (
+                            <button key={q} className="p-2 border-2 rounded-xl" onClick={() => handleQuestionClick(q)}>{q}</button>
+                        ))}
+                    </section>
+                )}
             </section>
             <section className="p-2 mt-auto">
                 <form onSubmit={handleSubmit} className="flex w-full max-w-3xl mx-auto items-center">

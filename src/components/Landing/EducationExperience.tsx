@@ -3,7 +3,7 @@ import React from 'react'
 
 const EducationExperience = () => {
     return (
-        <section id="about-me" className="p-2 view flex flex-col sm1:flex-row">
+        <section id="education" className="p-2 view flex flex-col sm1:flex-row">
             <article className="appear-view w-full basis-1/2 sm1:mr-2">
                 <h1 className='w-full text-center bg-backgroundReverse text-foregroundReverse text-xl mb-2'>Education</h1>
                 <section className='p-2'>
