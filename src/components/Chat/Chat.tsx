@@ -27,7 +27,7 @@ const Chat = () => {
                                 </li>
                             ) : (
                                 <li key={m.id} className="flex flex-row">
-                                    <div className="rounded-t-lg rounded-r-lg rounded-tl-lg p-1 bg-background text-foreground shadow-md max-w-3/4 overflow-hidden">
+                                    <div className="rounded-t-lg rounded-r-lg rounded-tl-lg p-1 bg-background text-foreground shadow-md w-3/4 overflow-hidden">
                                         <MyMarkdown>{m.content}</MyMarkdown>
                                     </div>
                                 </li>

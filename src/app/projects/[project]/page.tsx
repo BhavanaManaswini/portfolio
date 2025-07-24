@@ -1,11 +1,16 @@
 import React from 'react'
+import DSATracker from '../_CaseStudies/DSATracker';
+import Scriptoria from '../_CaseStudies/Scriptoria';
+import Portfolio from '../_CaseStudies/Portfolio';
 
 const Page = ({ params }: { params: { project: string } }) => {
 
     const { project } = params
     return (
         <main className="flex flex-col w-full bg-background min-h-[calc(90vh)]">
-            {project}
+            {project === "dsa-tracker" && <DSATracker />}
+            {project === "scriptoria" && <Scriptoria />}
+            {project === "portfolio" && <Portfolio />}
         </main>
     )
 }

@@ -58,6 +58,11 @@ const MyMap = () => {
                             style={{ width: '300px', padding: 0 }}>
                             <h3 className="font-bold mb-1">{selected.name}</h3>
                             <p>{selected.description}</p>
+                            {selected.name == 'Capgemini' && (
+                                <p className='italic'>
+                                    Over the last 3 years I built scalable React/Next.js apps with secure auth. Expert in Redux state management, and REST APIs integration. Delivered pixel-perfect, accessible UIs.
+                                </p>
+                            )}
                         </div>
                     </Popup>
                 )}
