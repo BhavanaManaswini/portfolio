@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       borderColor: {
-        DEFAULT: '#0a0a0a',
+        DEFAULT: "var(--foreground)",
+        borderReverse: "var(--background)",
       },
       colors: {
         background: "var(--background)",

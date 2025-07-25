@@ -3,7 +3,7 @@ import { Icons } from '../icons'
 
 const Summary = () => {
     return (
-        <article id="summary" className="w-full flex flex-col md:flex-row">
+        <article id="summary" className="w-full flex flex-col md:flex-row py-2">
             <section className="basis-3/5 p-2 flex flex-col border-b md:border-none">
                 <h1 className='w-full text-2xl font-bold flex flex-col tracking-2'>
                     <span className='w-full text-center'>

@@ -53,9 +53,9 @@ const GetProject = ({ title, description, href }: { title: string, description: 
                 >
                     <Link
                         href={href}
-                        className={`bg-black/80 backdrop-blur-xs h-full text-foregroundReverse flex w-full justify-center items-center rounded-md`}
+                        className={`bg-black/80 backdrop-blur-xs h-full flex w-full justify-center items-center rounded-md`}
                     >
-                        <p className='w-full bg-black text-foregroundReverse p-2 text-center'>Know More <Icons.forward className="size-6 inline" /></p>
+                        <p className='w-full bg-black text-[antiquewhite] p-2 text-center transition-transform duration-300 ease-in-out hover:scale-105'>Know More <Icons.forward className="size-6 inline" /></p>
                     </Link>
 
                 </div>

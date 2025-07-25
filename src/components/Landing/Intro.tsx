@@ -20,10 +20,10 @@ const Intro = () => {
                 <p className="text-lg leading-relaxed">
                     Specialized in building interactive, and responsive interfaces that elevate user experience with a keen eye for detail.
                 </p>
-                <p className="italic text-stone-900">
+                <p className="italic">
                     Discover the tools & frameworks that shape my development approach.
                 </p>
-                <button className="mt-4 px-4 py-2 border border-dashed border-stone-800 text-stone-800 hover:bg-backgroundReverse hover:text-foregroundReverse transition">
+                <button className="mt-4 px-4 py-2 border border-dashed hover:bg-backgroundReverse hover:text-foregroundReverse transition">
                     <Link href="/#skills">Read Full Article</Link>
                 </button>
             </article>
@@ -43,10 +43,10 @@ const Intro = () => {
                 <p className="text-lg leading-relaxed">
                     Portfolio showcases a range of creative and technical achievements from concept sketches to production ready apps.
                 </p>
-                <p className="italic text-stone-900">
+                <p className="italic">
                     Browse through case studies and live demos to see the works in action.
                 </p>
-                <button className="mt-4 px-4 py-2 border border-dashed border-stone-800 text-stone-800 hover:bg-backgroundReverse hover:text-foregroundReverse transition">
+                <button className="mt-4 px-4 py-2 border border-dashed hover:bg-backgroundReverse hover:text-foregroundReverse transition">
                     <Link href="/#projects">View Portfolio</Link>
                 </button>
             </article>

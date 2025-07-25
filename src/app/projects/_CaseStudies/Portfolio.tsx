@@ -35,7 +35,7 @@ const Portfolio = () => {
             </section>
             <section className='w-full add-bg relative'>
                 <Image src="/portfolio.png" alt="portfolio" width={1000} height={500} className="w-full md:w-3/4 object-contain my-2 mx-auto rounded-lg" />
-                <Link href="https://bhavana-manaswini-p.vercel.app/" target="_blank" className='absolute -bottom-0 right-0 bg-backgroundReverse text-foregroundReverse p-2 rounded-lg'>Live Demo<Icons.extlink className='inline size-6 mx-2' /></Link>
+                <Link href="https://bhavana-manaswini-p.vercel.app/" target="_blank" className='absolute -bottom-0 right-0 bg-backgroundReverse text-foregroundReverse p-2 rounded-lg border-2 border-borderReverse'>Live Demo<Icons.extlink className='inline size-6 mx-2' /></Link>
             </section>
             <section className="my-2 grid grid-cols-1 md:grid-cols-3 gap-2">
                 <h3 className="text-2xl col-span-1 md:col-span-3 font-bold text-center">Key Features</h3>

@@ -26,9 +26,9 @@ const MyMap = () => {
         <div className="w-full h-96 rounded-lg">
             <Map
                 initialViewState={{
-                    longitude: 80.1514447,
-                    latitude: 17.2472528,
-                    zoom: 7,
+                    longitude: 79,
+                    latitude: 21,
+                    zoom: 3,
                 }}
                 style={{ width: '100%', height: '100%' }}
                 mapStyle="https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"

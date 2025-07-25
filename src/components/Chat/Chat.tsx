@@ -54,7 +54,7 @@ const Chat = () => {
                 {messages.length === 0 && (
                     <section className="absolute bottom-0 w-full flex flex-wrap gap-2 justify-center">
                         {questions.map(q => (
-                            <button key={q} className="p-2 border-2 rounded-xl" onClick={() => handleQuestionClick(q)}>{q}</button>
+                            <button key={q} className="p-2 border border-borderReverse rounded-xl mx-2" onClick={() => handleQuestionClick(q)}>{q}</button>
                         ))}
                     </section>
                 )}
@@ -65,7 +65,7 @@ const Chat = () => {
                         value={input}
                         onChange={handleInputChange}
                         placeholder="Curious about me? Just ask!"
-                        className="w-full flex-1 rounded-lg border bg-transparent px-3 py-2.5 text-sm text-foregroundReverse outline-none transition-colors border-stone-500 focus:outline-none disabled:border-0"
+                        className="w-full flex-1 rounded-lg border-2 bg-transparent px-3 py-2.5 text-sm text-foregroundReverse border-borderReverse outline-none transition-colors focus:outline-none disabled:border-0 placeholder:text-stone-500"
                     />
                     <button className="m-1 p-1 rounded-lg bg-background text-foreground" type="submit">
                         Submit
