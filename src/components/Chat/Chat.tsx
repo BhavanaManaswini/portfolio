@@ -1,60 +1,67 @@
 'use client'
-
 import { useChat } from "ai/react"
 import MyMarkdown from "../Markdown/Markdown"
 import Loader from "../Loader/Loader"
-
-const questions = ['What is your total experience?', 'Can you share your Next.js experience?', 'Have you worked with react hooks?']
+import { useRef, useEffect } from "react"
+const questions = [
+    'What is your total experience?',
+    'Can you share your Next.js experience?',
+    'Have you worked with react hooks?'
+]
 
 const Chat = () => {
-
     const { messages, input, handleInputChange, handleSubmit, isLoading } = useChat({
         api: `api/chat`,
         onError: (e: unknown) => {
             console.error(e)
         }
     })
-
-
+    const inputRef = useRef<HTMLInputElement | null>(null)
+    const messagesContainerRef = useRef<HTMLUListElement | null>(null)
     const handleQuestionClick = (question: string) => {
-        handleInputChange({ target: { value: question } } as React.ChangeEvent<HTMLInputElement>);
-        setTimeout(() => handleSubmit(), 0);
-    };
+        handleInputChange({ target: { value: question } } as React.ChangeEvent<HTMLInputElement>)
+        inputRef.current?.focus()
+    }
 
-
+    useEffect(() => {
+        if (messagesContainerRef.current) {
+            messagesContainerRef.current.scrollTop = messagesContainerRef.current.scrollHeight
+        }
+    }, [messages, isLoading])
     return (
-        <section className="flex flex-col h-full h-96 overflow-hidden bg-backgroundReverse text-foregroundReverse rounded-lg">
-            <section className="flex flex-col w-full overflow-hidden flex-1 relative">
-                <ul className="h-full flex-grow rounded-lg overflow-y-auto scrollbar-hide flex flex-col gap-4 px-4 py-2 min-h-80 max-h-80">
+        <section className="flex flex-col h-96 bg-backgroundReverse text-foregroundReverse rounded-lg">
+            <section className="flex flex-col w-full flex-1 relative overflow-hidden">
+                <ul
+                    ref={messagesContainerRef}
+                    className="flex-1 overflow-y-auto scrollbar-hide flex flex-col gap-4 px-4 py-2 h-80"
+                >
                     {messages.map((m, index) => (
-                        <div key={index}>
-                            {m.role === 'user' ? (
-                                <li key={m.id} className="flex flex-row-reverse">
-                                    <div className="rouded-t-lg rounded-l-lg rounded-tr-lg p-1 bg-background text-foreground shadow-md flex overflow-x-auto scrollbar-hide max-w-3/4">
-                                        <pre>{m.content}</pre>
-                                    </div>
-                                </li>
-                            ) : (
-                                <li key={m.id} className="flex flex-row">
-                                    <div className="rounded-t-lg rounded-r-lg rounded-tl-lg p-1 bg-background text-foreground shadow-md w-3/4 overflow-hidden">
-                                        <MyMarkdown>{m.content}</MyMarkdown>
-                                    </div>
-                                </li>
-                            )}
+                        <div key={index} className={`${m.role === "user" ? "ml-[25%]" : "mr-[25%]"}`}>
+                            <li key={m.id} className={`flex ${m.role === "user" ? 'flex-row-reverse' : 'flex-row'}`}>
+                                <div className={`rounded-t-lg ${m.role === "user" ? 'rounded-t-lg' : 'rounded-r-lg'} p-1 bg-background text-foreground shadow-md w-fit overflow-hidden`}>
+                                    <MyMarkdown>{m.content}</MyMarkdown>
+                                </div>
+                            </li>
                         </div>
                     ))}
                     {isLoading && (
                         <li className="flex flex-row max-h-8">
-                            <div className="rouded-t-lg rounded-r-lg rounded-tl-lg p-1 shadow-md flex flex-col max-w-3/4">
+                            <div className="rounded-t-lg rounded-r-lg p-1 shadow-md flex flex-col max-w-3/4">
                                 <Loader />
                             </div>
                         </li>
                     )}
                 </ul>
                 {messages.length === 0 && (
-                    <section className="absolute bottom-0 w-full flex flex-wrap gap-2 justify-center">
+                    <section className="absolute bottom-20 w-full flex flex-wrap gap-2 justify-center">
                         {questions.map(q => (
-                            <button key={q} className="p-2 border border-borderReverse rounded-xl mx-2" onClick={() => handleQuestionClick(q)}>{q}</button>
+                            <button
+                                key={q}
+                                className="p-2 border border-borderReverse rounded-xl mx-2"
+                                onClick={() => handleQuestionClick(q)}
+                            >
+                                {q}
+                            </button>
                         ))}
                     </section>
                 )}
@@ -63,6 +70,7 @@ const Chat = () => {
                 <form onSubmit={handleSubmit} className="flex w-full max-w-3xl mx-auto items-center">
                     <input
                         value={input}
+                        ref={inputRef}
                         onChange={handleInputChange}
                         placeholder="Curious about me? Just ask!"
                         className="w-full flex-1 rounded-lg border-2 bg-transparent px-3 py-2.5 text-sm text-foregroundReverse border-borderReverse outline-none transition-colors focus:outline-none disabled:border-0 placeholder:text-stone-500"
@@ -75,5 +83,4 @@ const Chat = () => {
         </section>
     )
 }
-
 export default Chat

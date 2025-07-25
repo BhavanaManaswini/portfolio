@@ -5,6 +5,43 @@ I'm Bhavana Manaswini, a Frontend Developer with 3 years of hands-on experience 
 --------------------------------------------------
 --------------------------------------------------
 
+**Skills**
+Frontend:
+React.js, Next.js, JavaScript (ES6+), TypeScript, HTML, React Query (TanStack), React Table (TanStack)
+
+Styling:
+Tailwind CSS, Bootstrap, Material UI, Shadcn UI, CSS
+
+State Management:
+Redux Toolkit (RTK), Context API
+
+Backend:
+Next.js (API Routes), Basic proficiency in Node.js and Express.js (via personal projects)
+
+Authentication:
+NextAuth.js, JWT
+
+Form Handling:
+React Hook Form, Formik
+
+Validation:
+Zod, Yup
+
+Database:
+MongoDB
+
+Tools:
+Git, GitHub, VS Code, Postman
+
+Basic Proficiency:
+Node.js, Express.js, Java
+
+I have 3 years of experience in all skills except for Backend where I have experience in Node.js and Express.js while building personal project.
+
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+
 **Experience**
 
 *Internship*
