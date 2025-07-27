@@ -112,7 +112,7 @@ const DSATracker = () => {
                             </li>
                             <li className="flex items-start">
                                 <span className="text-backgroundReverse mr-2">•</span>
-                                <span>Implementing rollback logic if API failed</span>
+                                <span>Implemented fallback loader while fetching</span>
                             </li>
                             <li className="flex items-start">
                                 <span className="text-backgroundReverse mr-2">•</span>

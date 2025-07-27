@@ -127,12 +127,12 @@ Credentails: test@gmail.com(email), Test@123(password)
 Project 2. Scriptoria – MERN Stack Digital Library
 A Book Discovery & Personal Writing Hub
 
-Problem Solved: Readers and writers need a centralized platform to explore books, save favorites, draft their own stories and even download them.
+Problem Solved: Readers and writers need a centralized platform to explore books, save Favourites, draft their own stories and even download them.
 
 Key Features & Tech Breakdown:
 1. Book Discovery & Reading
 Integrated Open Library API to fetch and read 10,000+ books online.
-Personalized collections (Favorites, Recently Viewed).
+Personalized collections (Favourites, Recently Viewed).
 2. User-Generated Content
 Rich text editor for writing and saving stories.
 Download books as PDFs (jspdf).

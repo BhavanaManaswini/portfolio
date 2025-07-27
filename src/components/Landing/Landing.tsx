@@ -16,9 +16,9 @@ const Landing = () => {
             <Skills />
             <Projects />
             <Services />
-            <EducationExperience />
-            <Curious />
             <AboutMe />
+            <Curious />
+            <EducationExperience />
         </>
     )
 }

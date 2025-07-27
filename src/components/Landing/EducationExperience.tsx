@@ -3,8 +3,8 @@ import React from 'react'
 
 const EducationExperience = () => {
     return (
-        <section id="education" className="p-2 view flex flex-col sm1:flex-row">
-            <article className="appear-view w-full basis-1/2 sm1:mr-2">
+        <section className="p-2 view flex flex-col sm1:flex-row">
+            <article id="education" className="appear-view w-full basis-1/2 sm1:mr-2">
                 <h1 className='w-full text-center bg-backgroundReverse text-foregroundReverse text-xl mb-2'>Education</h1>
                 <section className='p-2'>
                     <h3 className='font-bold underline'>B.Tech</h3>
@@ -24,7 +24,7 @@ const EducationExperience = () => {
                 </section>
 
             </article>
-            <article className="appear-view w-full basis-1/2 sm1:ml-2">
+            <article id="experience" className="appear-view w-full basis-1/2 sm1:ml-2">
                 <h1 className='w-full text-center bg-backgroundReverse text-foregroundReverse text-xl mb-2'>Experience</h1>
                 <section className='p-2'>
                     <h3 className='font-bold underline'>Senior Software Engineer</h3>
