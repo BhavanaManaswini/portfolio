@@ -17,8 +17,8 @@ const Projects = () => {
     return (
         <section id="works" className='grid grid-cols-1 sm1:grid-cols-2 gap-4'>
             {projects.map((project) => (
-                <article key={project.title} className='flex flex-col flex-1 gap-4 p-10'>
-                    <Image priority src={project.img} width={450} height={450} alt={project.title} />
+                <article key={project.title} className='flex flex-col justify-center items-center flex-1 gap-4 p-10'>
+                    <Image priority src={project.img} width={450} height={450} alt={project.title} className='transition duration-300 ease-in-out hover:scale-95' />
                     <GetProject key={project.title} title={project.title} description={project.description} href={project.href} />
                 </article>
             ))}
