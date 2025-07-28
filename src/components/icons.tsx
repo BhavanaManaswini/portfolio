@@ -574,8 +574,92 @@ export const Icons = {
         </svg>
     ),
     close: (props: IconProps) => (
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6" {...props}>
-            <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6" {...props}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg>
+    ),
+    bullet: (props: IconProps) => (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            width="1em"
+            height="1em"
+            {...props}
+        >
+            <path
+                fill="currentColor"
+                d="M265.8 18.05c-4.7 38.56-4.7 38.56-38.4 57.92c38.6 4.73 38.6 4.73 58 38.43c4.7-38.58 4.7-38.58 38.4-57.95c-38.6-4.73-38.6-4.73-58-38.4m206.3 20.59c-3.8 1.14-9 3.12-15.2 6.04c-14.1 6.57-32.6 17.05-51.9 29c-38.5 23.86-80.5 54.32-96.1 70.42l-.8.8l-42 24.4c3.6 2.2 7 4.6 10.5 7.3c12.8 9.9 25.3 22.6 32 28.9l-12.2 13.2c-7.5-7-19.4-19.1-30.8-27.9c-5.6-4.3-11.2-7.8-15-9.3c-2.2-.8-3.3-1-3.8-1l-.8.5L60.57 366.2c3.35.5 6.73 1.4 10.09 2.5c14.85 4.9 30.54 14.9 44.84 29.2c14.2 14.2 24.2 29.9 29.2 44.7c.6 1.9 1.2 3.8 1.6 5.8l183.3-183.3l36-58.6l.7-.8c17.8-17.7 48.1-60.4 71.6-99.3c11.8-19.41 22-38.06 28.3-52.18c2.9-6.4 4.8-11.71 5.9-15.58M438 153.2c4.1 31.3 4.1 31.3-18.4 53.5c31.4-4.2 31.4-4.2 53.5 18.2c-4.2-31.2-4.2-31.2 18.1-53.4c-31.1 4.1-31.1 4.1-53.2-18.3M85.47 185.4c-16.43 30.2-16.43 30.2-50.41 35.3c30.18 16.5 30.18 16.5 35.3 50.4C86.79 241 86.79 241 120.7 235.8c-30.14-16.5-30.14-16.5-35.23-50.4m333.03 55.2c-25.1 52-25.1 52-81.9 63.1c52.1 25.1 52.1 25.1 63.2 81.9c25.1-52.1 25.1-52.1 81.8-63.1c-52-25.2-52-25.2-63.1-81.9M52.38 383.5c-4.41 0-7.54 1.2-9.37 3c-3.25 3.3-4.52 10.6-.78 22c3.82 11.3 12.45 25.2 24.89 37.7c12.45 12.4 26.31 21 37.68 24.8c11.4 3.8 18.7 2.5 22-.7c3.2-3.3 4.5-10.6.8-22c-3.9-11.3-12.5-25.2-25-37.6c-12.42-12.5-26.28-21.1-37.6-24.9c-4.98-1.7-9.19-2.3-12.62-2.3m166.12 28.4c3 25.2 3 25.2-15.4 42.9c25.3-3.1 25.3-3.1 43 15.3c-3-25.3-3-25.3 15.2-42.9c-25.2 3-25.2 3-42.8-15.3M69.32 421a20.66 7.804 45 0 1 16.83 10.1a20.66 7.804 45 0 1 9.09 20.1a20.66 7.804 45 0 1-20.13-9.1a20.66 7.804 45 0 1-9.09-20.1a20.66 7.804 45 0 1 3.3-1"
+            ></path>
+        </svg>
+    ),
+    arrow: (props: IconProps) => (
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-2" {...props}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+        </svg>
+    ),
+    correct: (props: IconProps) => (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 48 48"
+            width="1em"
+            height="1em"
+            {...props}
+        >
+            <g
+                fill="none"
+                stroke="#fff"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="4"
+            >
+                <path d="M42 20V39C42 40.6569 40.6569 42 39 42H9C7.34315 42 6 40.6569 6 39V9C6 7.34315 7.34315 6 9 6H30"></path>
+                <path d="M16 20L26 28L41 7"></path>
+            </g>
+        </svg>
+    ),
+    wannaChat: (props: IconProps) => (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            width="1em"
+            height="1em"
+            {...props}
+        >
+            <g fill="none">
+                <path
+                    fill="url(#fluentColorChatMultiple200)"
+                    d="M11.5 5a6.5 6.5 0 0 1 5.675 9.672l.796 2.082a1 1 0 0 1-1.204 1.32l-2.488-.697A6.5 6.5 0 1 1 11.5 5"
+                ></path>
+                <path
+                    fill="url(#fluentColorChatMultiple201)"
+                    d="M8.538 2a6.5 6.5 0 0 0-5.674 9.672l-.796 2.082a1 1 0 0 0 1.204 1.32l2.487-.697A6.5 6.5 0 1 0 8.539 2"
+                ></path>
+                <defs>
+                    <radialGradient
+                        id="fluentColorChatMultiple200"
+                        cx="0"
+                        cy="0"
+                        r="1"
+                        gradientTransform="matrix(6 7 -7 6 8.5 8.5)"
+                        gradientUnits="userSpaceOnUse"
+                    >
+                        <stop offset=".63" stopColor="#3D35B1"></stop>
+                        <stop offset=".85" stopColor="#6553C9"></stop>
+                        <stop offset="1" stopColor="#7660D3"></stop>
+                    </radialGradient>
+                    <linearGradient
+                        id="fluentColorChatMultiple201"
+                        x1="2"
+                        x2="15.112"
+                        y1="2"
+                        y2="15.038"
+                        gradientUnits="userSpaceOnUse"
+                    >
+                        <stop stopColor="#0FAFFF"></stop>
+                        <stop offset="1" stopColor="#2764E7"></stop>
+                    </linearGradient>
+                </defs>
+            </g>
         </svg>
     ),
 };

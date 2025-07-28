@@ -1,19 +1,27 @@
+import Image from "next/image";
+
 const Header = () => {
 
     return (
         <>
-            <header className='w-full grid grid-cols-2 md:grid-cols-6'>
+            <header className='w-full grid grid-cols-2 md:grid-cols-6 pb-1'>
                 <GetDay />
-                <h1 className='min-h-20 col-span-2 md:col-span-4 text-5xl items-center text-center flex flex-col border-b '>
-                    Frontend Developer
-                    <p className='text-sm'>Est. 2022 – You Design. I Develop.</p>
+                <h1 className='min-h-20 col-span-2 md:col-span-4 text-4xl items-center text-center flex flex-wrap justify-center border-b '>
+                    <section className="flex flex-col">
+                        The Dev Times
+                        <p className='text-sm'>Est. 2022 – You Design. I Develop.</p>
+                    </section>
+                    <Image
+                        src="/Frontend.png"
+                        alt="Staml image"
+                        width={100}
+                        height={100}
+                        className="rounded-full w-1/8"
+                        priority={true}
+                    />
                 </h1>
                 <GetSpecialEdition />
-                <p className="col-span-2 md:col-span-6 text-end pr-4 italic bg-backgroundReverse text-foregroundReverse">
-                    - Bhavana Manaswini
-                </p>
             </header>
-            <hr className="bg-black my-1 h-[1px]" />
         </>
     )
 }
@@ -46,8 +54,8 @@ const GetDay = (props: React.HtmlHTMLAttributes<Element>) => {
 }
 
 const GetSpecialEdition = (props: React.HtmlHTMLAttributes<Element>) => {
-    return <h6 className='h-auto col-span-2 md:col-span-1 text-sm text-right flex md:flex-col items-right justify-center border-b ' {...props}>
-        <b>Special Edition:</b> <i>Frontend Engineer for Hire</i>
+    return <h6 className='h-auto col-span-2 md:col-span-1 text-sm text-right flex md:flex-col items-right justify-between border-b ' {...props}>
+        <b className="underline decoration-double">Special Edition:</b> <i>Frontend Dev<br className="hidden md:flex"></br> for Hire</i>
     </h6>
 
 }

@@ -26,16 +26,26 @@ const config: Config = {
         'md3': '1200px',
       },
       animation: {
-        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+        'infinite-scroll': 'infinite-scroll 50s linear infinite',
+        'infinite-scroll-reverse': 'infinite-scroll-reverse 30s linear infinite',
         typing: "typing 30s",
         wiggle: 'wiggle 1s ease-in-out infinite',
         'text-slide': 'text-slide 12.5s cubic-bezier(0.83, 0, 0.17, 1) 3s infinite',
         wave: 'wave 1.2s ease-in-out infinite',
+        shoot: 'shoot 4s linear forwards',
+        "text-reveal": "text-reveal 4s cubic-bezier(0.77, 0, 0.175, 1) forwards",
+        expand: 'expand 4s ease forwards',
+
       },
       keyframes: {
         'infinite-scroll': {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(-100%)' },
+        },
+
+        'infinite-scroll-reverse': {
+          from: { transform: 'translateX(-100%)' },
+          to: { transform: 'translateX(0%)' },
         },
         typing: {
           "0%": {
@@ -80,6 +90,22 @@ const config: Config = {
         wave: {
           '0%, 40%, 100%': { transform: 'scaleY(0.4)' },
           '20%': { transform: 'scaleY(1)' },
+        },
+        shoot: {
+          '0%': { left: '0%', top: '0%' },
+          '100%': { left: '100%', top: '0%' },
+        },
+        'text-reveal': {
+          '0%': { transform: 'translateY(100%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        expand: {
+          '0%': { height: '0px', opacity: '1' },
+          '100%': {
+            height: '100%', opacity: '1',
+            bottom: '0',
+            left: '0',
+          },
         },
       }
     },

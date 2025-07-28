@@ -40,7 +40,7 @@ const Scriptoria = () => {
                 </section>
             </section>
             <section className='w-full add-bg relative border-t-2 border-b-2 p-2 my-4'>
-                <Image src="/scriptoria.png" alt="scriptoria" width={1000} height={500} className="w-full md:w-3/4 object-contain my-2 mx-auto rounded-lg" />
+                <Image priority src="/scriptoria.png" alt="scriptoria" width={1000} height={500} className="w-full md:w-3/4 object-contain my-2 mx-auto rounded-lg" />
                 <Link href="https://scriptoria-mern.netlify.app/" target="_blank" className='absolute -bottom-0 right-0 bg-backgroundReverse text-foregroundReverse p-2 rounded-lg border-2 border-borderReverse'>Live Demo<Icons.extlink className='inline size-6 mx-2' /></Link>
             </section>
             <section className="my-2 grid grid-cols-1 md:grid-cols-2 gap-2">
