@@ -1,6 +1,5 @@
 import React from 'react'
 import { Icons } from '../icons'
-import Glow from '../HOC/Glow'
 
 const skills = [
     { skill: 'React JS', icon: <Icons.react className='size-14' /> },
