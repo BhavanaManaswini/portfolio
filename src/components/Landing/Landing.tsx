@@ -1,24 +1,27 @@
 import React from 'react'
-import Summary from './Summary'
-import Intro from './Intro'
+import Summary from '../Summary/Summary'
 import Projects from './Projects'
 import Services from './Services'
 import Skills from './Skills'
-import EducationExperience from './EducationExperience'
+import Experience from '../Experience/Experience'
 import Curious from './Curious'
 import AboutMe from './AboutMe'
+import Header from '../Header/Header'
+import ContactMe from '../ContactMe/ContactMe'
+
+
 
 const Landing = () => {
     return (
         <>
+            <Header />
             <Summary />
-            <Intro />
-            <Skills />
             <Projects />
+            <Skills />
+            <Experience />
             <Services />
             <AboutMe />
-            <Curious />
-            <EducationExperience />
+            <ContactMe />
         </>
     )
 }

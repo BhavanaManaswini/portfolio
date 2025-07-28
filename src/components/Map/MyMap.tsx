@@ -24,11 +24,11 @@ const MyMap = () => {
     const [selected, setSelected] = useState<Location | null>(null);
 
     return (
-        <div className="w-full h-96 rounded-lg">
+        <div className="w-full h-full min-h-96 rounded-lg">
             <Map
                 initialViewState={{
-                    longitude: 78.38,
-                    latitude: 17.53,
+                    longitude: 78.4,
+                    latitude: 17.5,
                     zoom: 4,
                 }}
                 style={{ width: '100%', height: '100%' }}
@@ -55,26 +55,10 @@ const MyMap = () => {
                         anchor="left"
                         closeButton={false}
                     >
-                        <div className="bg-backgroundReverse text-foregroundReverse rounded-lg text-sm w-full p-2 relative"
-                            style={{ width: '450px', padding: 0 }}>
+                        <div className="text-foregroundReverse rounded-lg text-sm w-full p-2 relative"
+                            style={{ width: '250px', padding: 0 }}>
                             <h3 className="font-bold mb-1">{selected.name == 'Capgemini' && (<Image src="/CGLogo.png" width={25} height={25} alt="CG logo" className='inline' />)}{selected.name}</h3>
                             <p>{selected.description}</p>
-                            {selected.name == 'Capgemini' && (
-                                <ul className='italic py-4'>
-                                    Over the last 3 years I:
-                                    <div style={{ height: '200px', overflowY: 'scroll', scrollbarWidth: 'thin', scrollbarColor: 'antiquewhite black' }}>
-                                        <li className='ml-4'>Developed modern high-performance SPAs using React.js and integrated Restful APIs.</li>
-                                        <li className='ml-4'>Transformed complex UX/UI designs into highly functional and visually appealing pixel-perfect web applications, ensuring cross-browser and cross-device compatibility with accessibility.</li>
-                                        <li className='ml-4'>Developed reusable 30+ custom reusable components reducing code duplication by 20%.</li>
-                                        <li className='ml-4'>Optimized application performance, reducing load times by 30% using code-splitting, lazy loading and memoization.</li>
-                                        <li className='ml-4'>Achieved 90%+ test coverage using Jest and React Testing Library, reducing production bugs by 40%.</li>
-                                        <li className='ml-4'>Integrated RESTful APIs with Redux, optimizing data flow and state management for smooth user experience.</li>
-                                        <li className='ml-4'>Engineered full-stack web solutions using Next.js, leveraging Static Site Generation (SSG) and Server-Side rendering (SSR) to enhance SEO and performance optimization.</li>
-                                        <li className='ml-4'>Implemented secure authentication using Next-Auth with JWT, ensuring data protection and role-based access for 1000+ users.</li>
-                                        <li className='ml-4'>Worked with  Git and GitHub for version control as part of the CI/CD workflow.</li>
-                                    </div>
-                                </ul>
-                            )}
                             <button className='absolute right-0 top-0 text-red-500' onClick={() => setSelected(null)}><Icons.close /></button>
                         </div>
                     </Popup>

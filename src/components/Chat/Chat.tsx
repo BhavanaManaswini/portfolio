@@ -29,7 +29,7 @@ const Chat = () => {
         }
     }, [messages, isLoading])
     return (
-        <section className="flex flex-col h-96 bg-backgroundReverse text-foregroundReverse rounded-lg">
+        <section className="flex flex-col h-96 bg-slate-900 text-foregroundReverse rounded-lg">
             <section className="flex flex-col w-full flex-1 relative overflow-hidden">
                 <ul
                     ref={messagesContainerRef}

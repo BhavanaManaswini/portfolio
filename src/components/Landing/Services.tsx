@@ -27,9 +27,9 @@ const services = [
         icon: <Icons.ds />
     },
     {
-        title: 'SEO & SSR Optimization',
+        title: 'State Management Architecture',
         description:
-            'Boost visibility with Next.js Static Site Generation (SSG) and Server-Side Rendering (SSR). Perfect for content-heavy or marketing websites.',
+            'Design scalable state management solutions using Redux, and React Query. Ensure clean separation of concerns, predictable data flow, and maintainability.',
         icon: <Icons.seo />
     },
 ];

@@ -21,10 +21,10 @@ After my internship, I transitioned into a full-time Senior Software Engineer ro
 
 --------------------------------------------------
 
-Project 1: Insurance Web Application (React.js)
+Project 1: Software as a Service (Saas) Platform (React.js)
 Frontend Developer | Oct 2022 – Sep 2023
 
-I worked as a React.js developer for an insurance client, contributing to a high-traffic web application. My role evolved from debugging to full feature development. Key contributions:
+I worked as a React.js developer for an Saas client, contributing to a high-traffic web application. My role evolved from debugging to full feature development. Key contributions:
 
 1.	Fixed critical UI bugs, improving application stability and enhancing user experience.
 2.	Developed reusable components, reducing code duplication by 20% and speeding up future development.

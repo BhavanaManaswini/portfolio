@@ -1,16 +1,15 @@
-import dynamic from 'next/dynamic';
 import React from 'react'
-const MyMap = dynamic(() => import('../Map/MyMap'), { ssr: false });
+import Chat from '../Chat/Chat';
+import { Icons } from '../icons';
 
 const AboutMe = () => {
     return (
-        <section id="about-me" className="p-2">
-            <h1 className="w-full text-center bg-backgroundReverse text-foregroundReverse text-xl mb-2">
-                About Me
-            </h1>
-            <MyMap />
+        <section id="chat">
+            <h1 className='w-full text-start text-2xl font-bold mb-2'><Icons.wannaChat className='size-16 mx-2 inline' /> Wanna Chat ??</h1>
+            <article className='p-2 border-2 border-dashed rounded-lg '>
+                <Chat />
+            </article>
         </section>
-
     )
 }
 

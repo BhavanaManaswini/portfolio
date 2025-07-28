@@ -3,65 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #d7c7af;
+  --background: #ece7e1;
+  --foreground: #031e26;
 }
-
-.add-bg {
-  background-color: #0a0a0a;
-  opacity: 1;
-  background-image: repeating-linear-gradient(
-      45deg,
-      #aa9d8a 25%,
-      transparent 25%,
-      transparent 75%,
-      #aa9d8a 75%,
-      #aa9d8a
-    ),
-    repeating-linear-gradient(
-      45deg,
-      #aa9d8a 25%,
-      #d7c7af 25%,
-      #d7c7af 75%,
-      #aa9d8a 75%,
-      #aa9d8a
-    );
-  background-position: 0 0, 16px 16px;
-  background-size: 32px 32px;
-}
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #d7c7af;
-  }
-  .add-bg {
-    background-color: #0a0a0a;
-    background-image: repeating-linear-gradient(
-        45deg,
-        #2e2e2e 25%,
-        transparent 25%,
-        transparent 75%,
-        #2e2e2e 75%,
-        #2e2e2e
-      ),
-      repeating-linear-gradient(
-        45deg,
-        #2e2e2e 25%,
-        #0a0a0a 25%,
-        #0a0a0a 75%,
-        #2e2e2e 75%,
-        #2e2e2e
-      );
-    background-position: 0 0, 16px 16px;
-    background-size: 32px 32px;
-  }
-} */
 
 body {
   color: var(--foreground);
   background: var(--background);
-  border-color: (var(--background));
+  border-color: (var(--foreground));
   text-overflow: ellipsis;
 }
 
@@ -96,7 +45,7 @@ body::before {
   width: 100vw;
   height: 100vh;
   pointer-events: none;
-  z-index: 9999;
+  z-index: 99;
   filter: url(#noiseFilter);
   opacity: 0.2;
 }
