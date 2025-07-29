@@ -17,19 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              const setTheme = () => {
-                document.documentElement.classList.add("dark");
-                document.documentElement.dataset.theme = "dark";
-              };
-              setTheme();
-            `,
-          }}
-        />
       </head>
       <body className="font-serif flex">
         <svg width="0" height="0" style={{ position: 'absolute' }}>
