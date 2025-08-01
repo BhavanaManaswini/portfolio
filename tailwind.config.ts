@@ -26,7 +26,7 @@ const config: Config = {
         'md3': '1200px',
       },
       animation: {
-        'infinite-scroll': 'infinite-scroll 50s linear infinite',
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
         'infinite-scroll-reverse': 'infinite-scroll-reverse 30s linear infinite',
         typing: "typing 30s",
         wiggle: 'wiggle 1s ease-in-out infinite',

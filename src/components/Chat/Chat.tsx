@@ -73,7 +73,7 @@ const Chat = () => {
                         ref={inputRef}
                         onChange={handleInputChange}
                         placeholder="Curious about me? Just ask!"
-                        className="w-full flex-1 rounded-lg border-2 bg-transparent px-3 py-2.5 text-sm text-foregroundReverse border-borderReverse outline-none transition-colors focus:outline-none disabled:border-0 placeholder:text-stone-500"
+                        className="w-full flex-1 rounded-lg border-2 bg-transparent px-3 py-2.5 text-sm text-foregroundReverse border-borderReverse outline-none transition-colors focus:outline-none disabled:border-0 placeholder:text-rose-500"
                     />
                     <button className="m-1 p-1 rounded-lg bg-background text-foreground" type="submit">
                         Submit

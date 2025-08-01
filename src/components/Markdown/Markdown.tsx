@@ -74,7 +74,7 @@ export default function MyMarkdown({ children }: { children: any }) {
                 },
                 tr({ node, ...props }) {
                     return (
-                        <tr className="even:bg-gray-800/40 hover:bg-stone-900 transition">
+                        <tr className="even:bg-gray-800/40 hover:bg-rose-900 transition">
                             {props.children}
                         </tr>
                     );

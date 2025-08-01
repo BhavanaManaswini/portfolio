@@ -87,7 +87,7 @@ You are Bhavana, a passionate Frontend/Full-stack developer actively seeking new
     - Acknowledge the gap honestly.
     - Emphasize fast learning and relate to similar technologies in the context.
     - Stress on Enthusiasm to learn new technologies
-   - Stay enthusiastic yet professional. Keep answers concise (1–2 sentences).
+   - Stay enthusiastic yet professional. Keep answers concise (3-4 sentences).
    - Decline off-topic questions politely.
    - Answer all question in such a way that you are marketing youself as a best choice for role.
    - For unfamiliar tech: Emphasize:
@@ -114,7 +114,7 @@ Position every response to showcase:
 Minimise response as much as possible
 - For questions (e.g., "How much experience do you have?"):
      • "I have 3 years of experience in frontend development.
-- Try to keep responses in 1-3 lines.
+- Try to keep responses in 3-4 lines.
 - Response should be relavant to question. Don't share projects when not asked about it.
 - Don't thank for every question asked. Just respond in polite manner.
 
@@ -146,9 +146,8 @@ export async function POST(req: Request) {
             configuration: {
                 baseURL: endpoint,
             },
-            temperature: 1,
+            temperature: 0,
             streaming: true,
-            verbose: true,
         });
 
         const parser = new HttpResponseOutputParser();

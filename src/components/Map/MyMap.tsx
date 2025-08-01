@@ -59,7 +59,7 @@ const MyMap = () => {
                             style={{ width: '250px', padding: 0 }}>
                             <h3 className="font-bold mb-1">{selected.name == 'Capgemini' && (<Image src="/CGLogo.png" width={25} height={25} alt="CG logo" className='inline' />)}{selected.name}</h3>
                             <p>{selected.description}</p>
-                            <button className='absolute right-0 top-0 text-red-500' onClick={() => setSelected(null)}><Icons.close /></button>
+                            <button className='absolute right-0 top-0 text-rose-500' onClick={() => setSelected(null)}><Icons.close /></button>
                         </div>
                     </Popup>
                 )}
