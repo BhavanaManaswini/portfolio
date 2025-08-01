@@ -4,7 +4,7 @@ import { Icons } from '../icons'
 const ExperienceCards = () => {
     return (
         <div className="relative w-full min-h-96">
-            <div className="absolute top-[0%] left-[0%] w-5/6 h-5/6 rounded-[10px] overflow-hidden transition-all duration-500 ease-out z-[1] hover:z-[4] hover:rotate-[0deg] hover:transform hover:perspective-[1000px] hover:transition-all hover:duration-500 hover:ease-out rotate-[-8deg] bg-emerald-900">
+            <div className="absolute top-[0%] left-[0%] w-5/6 h-5/6 rounded-[10px] overflow-hidden transition-all duration-500 ease-out z-[1] hover:z-[4] hover:rotate-[0deg] hover:transform hover:perspective-[1000px] hover:transition-all hover:duration-500 hover:ease-out rotate-[-8deg] bg-emerald-900 flex flex-row">
                 <div className="w-[90%] h-full p-5 flex flex-col justify-between items-end bg-emerald-950 transition-transform duration-500 origin-left transform perspective-[2000px] rotate-y-[-90deg] group-hover:rotate-y-[0deg]">
                     <h1 className="text-foregroundReverse">Frontend Developer</h1>
                     <ul className='text-sm text-white overflow-auto'>
@@ -16,10 +16,16 @@ const ExperienceCards = () => {
                     </ul>
                     <h1 className="text-foregroundReverse mt-2 italic">Saas Platform Development</h1>
                 </div>
+                <div className='w-[10%] h-full flex flex-col justify-center items-center gap-2 p-2'>
+                    <Icons.react className='size-12' />
+                    <Icons.js className='size-12' />
+                    <Icons.material className='size-12' />
+                    <Icons.redux className='size-12' />
+                </div>
             </div>
 
 
-            <div className="absolute top-[8%] left-[8%] w-5/6 h-5/6 rounded-[10px] overflow-hidden transition-all duration-500 ease-out z-[1] hover:z-[4] hover:rotate-[0deg] hover:transform hover:perspective-[1000px] hover:transition-all hover:duration-500 hover:ease-out rotate-[-8deg] bg-cyan-900">
+            <div className="absolute top-[8%] left-[8%] w-5/6 h-5/6 rounded-[10px] overflow-hidden transition-all duration-500 ease-out z-[1] hover:z-[4] hover:rotate-[0deg] hover:transform hover:perspective-[1000px] hover:transition-all hover:duration-500 hover:ease-out rotate-[-8deg] bg-cyan-900 flex flex-row">
                 <div className="w-[90%] h-full p-5 flex flex-col justify-between items-end bg-cyan-950 transition-transform duration-500 origin-left transform perspective-[2000px] rotate-y-[-90deg] group-hover:rotate-y-[0deg]">
                     <h1 className="text-foregroundReverse">Next JS Developer</h1>
                     <ul className='text-sm text-white overflow-auto'>
@@ -31,10 +37,18 @@ const ExperienceCards = () => {
                     </ul>
                     <h1 className="text-foregroundReverse mt-2 italic">API Documentation Portal</h1>
                 </div>
+                <div className='w-[10%] h-full flex flex-col justify-center items-center gap-2 p-2'>
+                    <Icons.next className='size-12' />
+                    <Icons.ts className='size-12' />
+                    <Icons.nextauth className='size-12' />
+                    <Icons.tailwind className='size-12' />
+                    <Icons.mongo className='size-12' />
+                    <Icons.shadcn className='size-12' />
+                </div>
             </div>
 
 
-            <div className="absolute top-[16%] left-[16%] w-5/6 h-5/6 rounded-[10px] overflow-hidden transition-all duration-500 ease-out z-[1] hover:z-[4] hover:rotate-[0deg] hover:transform hover:perspective-[1000px] hover:transition-all hover:duration-500 hover:ease-out rotate-[-8deg] bg-pink-900">
+            <div className="absolute top-[16%] left-[16%] w-5/6 h-5/6 rounded-[10px] overflow-hidden transition-all duration-500 ease-out z-[1] hover:z-[4] hover:rotate-[0deg] hover:transform hover:perspective-[1000px] hover:transition-all hover:duration-500 hover:ease-out rotate-[-8deg] bg-pink-900 flex flex-row">
                 <div className="w-[90%] h-full p-5 flex flex-col justify-between items-end bg-pink-950 transition-transform duration-500 origin-left transform perspective-[2000px] rotate-y-[-90deg] group-hover:rotate-y-[0deg]">
                     <h1 className="text-foregroundReverse">React JS Developer</h1>
                     <ul className='text-sm text-white overflow-auto'>
@@ -45,6 +59,12 @@ const ExperienceCards = () => {
                         <li className='flex flex-row justify-start mb-1'><Icons.correct className='size-6 inline-block mr-2' /><p>Microfrontend Architecture – Integrated independently developed epics into a Microfrontend architecture using Module Federation.</p></li>
                     </ul>
                     <h1 className="text-foregroundReverse mt-2 italic">Banking Portal</h1>
+                </div>
+                <div className='w-[10%] h-full flex flex-col justify-center items-center gap-2 p-2'>
+                    <Icons.react className='size-12' />
+                    <Icons.js className='size-12' />
+                    <Icons.css className='size-12' />
+                    <Icons.material className='size-12' />
                 </div>
             </div>
         </div>
