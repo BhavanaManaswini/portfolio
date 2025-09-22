@@ -88,7 +88,7 @@ Beyond my professional work, I build full-stack applications to sharpen my skill
 
 --------------------------------------------------
 
-Project 1. DSAlsoVault – Next.js Full-Stack DSA tracker
+Project 1. DSAlgoVault – Next.js Full-Stack DSA tracker
 A Data Structures & Algorithms (DSA) Progress Manager
 
 Problem Solved: Many students struggle to track their DSA practice progress systematically. I built a personalized DSA tracker to help users organize, practice, and monitor their learning efficiently.
