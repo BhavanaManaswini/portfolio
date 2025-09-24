@@ -1,18 +1,19 @@
 **About Me:**  
-I'm Bhavana Manaswini, a Frontend Developer with 3 years of hands-on experience building scalable web applications using React.js, Next.js, JavaScript, and TypeScript. I specialize in performance optimization, clean architecture, and pixel-perfect UIs.  
+I'm Bhavana Manaswini, a Frontend Developer with 3.5 years of hands-on experience building scalable web applications using React.js, Next.js, JavaScript, and TypeScript. I specialize in performance optimization, clean architecture, and pixel-perfect UIs.  
 
---------------------------------------------------
 --------------------------------------------------
 --------------------------------------------------
 
 **Experience**
 
 *Internship*
-I started my career as a Full-Stack Development Intern at Capgemini in March 2022, where I was trained in React.js and Java Spring Boot. My first web development project was building an Online Eye Clinic—a single-page application (SPA) that allowed patients to book appointments, view doctor availability, and manage medical records. During this project I:
+I started my career as a Full-Stack Development Intern at Capgemini in March 2022, where I was trained in Full stack development with React.js and Java Spring Boot. My first web development project was building an Online Eye Clinic—a single-page application (SPA) that allowed patients to book appointments, view doctor availability, and manage medical records. During this project I:
 
 1.	Implemented global state management using Context API for seamless data flow across components.
 2.	Designed a responsive UI using Bootstrap and ensured cross-browser compatibility.
 3.	Optimized performance using React.memo, useMemo, and useCallback, reducing unnecessary re-renders by 30%.
+4.  Designed backend REST APIs using Spring Boot (CRUD)
+PS:  Basic knowledge on Java Spring Boot. Confident to build backend Java applications using spring boot.
 
 --------------------------------------------------
 
@@ -70,7 +71,7 @@ Currently working on a large-scale banking application with a microfrontend arch
 2.	Debugged and resolved UI inconsistencies (fonts, styling, layout issues).
 3.	Worked with a shared component library and CSS-in-JS for consistent theming.
 4.	Wrote unit & integration tests using React Testing Library (RTL) & Jest, achieving 90%+ coverage.
-5.	Deployed changes in development environments using Jenkins CI/CD pipeline for testing changes.
+5.	Ddeployed application changes to development environments using Jenkins CI/CD pipelines, leveraging Docker containers and Kubernetes orchestration. Experienced in executing blue-green and canary deployments to ensure zero-downtime releases and controlled rollout of new features.
 6.	Implemented client-side tagging (Telium) for user behavior analytics & tracking.
 7.	Ensured accessibility compliance (WCAG 2.1 AA) with proper contrast ratios and keyboard navigation.
 8.	Collaborated with backend teams and integrated APIs using axios.
@@ -79,7 +80,6 @@ Currently working on a large-scale banking application with a microfrontend arch
 Tech Stack: React.js, JavaScript, Microfrontends, Jest, RTL, CSS-in-JS
 Tools: VS Code, Git, GitHub, Jenkins
 
---------------------------------------------------
 --------------------------------------------------
 --------------------------------------------------
 
@@ -175,7 +175,6 @@ Live Link: https://bhavana-manaswini-p.vercel.app/
 
 --------------------------------------------------
 --------------------------------------------------
---------------------------------------------------
 
 **Technical Skills**
 
@@ -215,10 +214,9 @@ Experience: 3 years of experience in version control, API testing, and efficient
 
 --------------------------------------------------
 --------------------------------------------------
---------------------------------------------------
 
 **Why Hire Me?**
-1. 3 years of focused frontend specialization
+1. 3+ years of focused frontend specialization
 2. Proven track record of high-quality deliverables
 3. Deep understanding of React/Next.js ecosystems
 4. Passion for creating exceptional user experiences
@@ -227,8 +225,9 @@ Experience: 3 years of experience in version control, API testing, and efficient
 7. Performance-driven – My apps load fast and run smoothly.
 8. Problem solver – I debug complex issues efficiently.
 9. Team player – I collaborate with designers, backend devs, and stakeholders.
+10. Fast learner - Can learn and implement new technologies parallely & quickly
+11. Love experimenting with ai technologies - integrated Langchain.js with Next.js to create an interactive portfolio website
 
---------------------------------------------------
 --------------------------------------------------
 --------------------------------------------------
 
@@ -237,7 +236,6 @@ Experience: 3 years of experience in version control, API testing, and efficient
 - Intermediate (HSC) in MPC, Narayana (9.73 CGPA)
 - 10th in CBSE, Pragathi Cenral School (10 CGPA)
 
---------------------------------------------------
 --------------------------------------------------
 --------------------------------------------------
 
@@ -252,7 +250,6 @@ Problem Solving
 
 --------------------------------------------------
 --------------------------------------------------
---------------------------------------------------
  
 **Let’s Connect:**  
 
@@ -262,28 +259,147 @@ Problem Solving
 
 --------------------------------------------------
 --------------------------------------------------
---------------------------------------------------
 
 **More Details about me**
 
 I was born on 15th April 2001 and based in Hyderabad, Telangana, India.
 I love playing Badminton.
 Listening to music is my recharge.
+Single (Ms)
+Age 24
 
---------------------------------------------------
 --------------------------------------------------
 --------------------------------------------------
 
 **More details about company**
-Working at Capgemini for last 3 years
-Notice period is 90 days
-Currently not serving Notice period (Did not resign)
+Working at Capgemini for last 3+ years
+Currently Serving Notice period. (Resigned)
+Last working day is 22nd Dec but could be negotiated to early release.
 Location: Gachibowli, Hyderabad, Telangana, India
 
 --------------------------------------------------
 --------------------------------------------------
---------------------------------------------------
 
 **My job Preferences**
-Looking for Frontend Developer / React.js Developer / Next.js Developer roles
+Looking for Frontend Developer / React.js Developer / Next.js Developer / MERN Developer roles
+Have basic knowledge in Java BE so open to work on Java + React full stack roles if given chance
+Have no knowlege on .Net or Python or other web technologies but willing to learn
 Preferred location: Remote (or) Hyderabad, but willing to relocate
+
+--------------------------------------------------
+--------------------------------------------------
+
+List of technologies I have worked with:
+
+Frontend Technologies
+React.js
+Next.js
+JavaScript (ES6+)
+TypeScript
+Redux Toolkit (RTK)
+React Query
+React Hook Form
+Zod
+Formik + Yup
+Tailwind CSS
+Bootstrap
+Material UI
+Shadcn
+CSS-in-JS
+HTML5
+CSS3
+Chart.js
+Recharts
+TanStack Table
+ExcelJS
+JSPDF
+Axios
+Fetch API
+RESTful APIs
+SSR / SSG / ISR / CSR
+Lazy Loading
+Code Splitting
+Memoization (useMemo, useCallback)
+useEffect / useState / useReducer / Custom Hooks
+Higher Order Components (HOC)
+Responsive Design
+Accessibility (WCAG 2.1 AA)
+ARIA roles
+Semantic HTML
+
+Architecture & Patterns:
+Microfrontend Architecture
+Module Federation
+Component Reusability
+Design Systems
+Monorepo
+Feature Flags
+Optimistic UI Updates
+State Management
+Custom Hook Architecture
+Pixel-Perfect UI
+RBAC (Role-Based Access Control)
+Public/Private Route Protection
+Middleware in Next.js
+
+Testing:
+Jest
+React Testing Library (RTL)
+Unit Testing
+Test Coverage (90%+)
+QA Collaboration
+Lighthouse Audits
+Performance Optimization
+
+DevOps & Deployment:
+Jenkins
+GitHub
+Docker
+Kubernetes
+CI/CD Pipelines
+Blue-Green Deployment
+Canary Releases
+Telium Tagging
+Monitoring & Logging
+
+Backend & Full-Stack:
+MongoDB
+Express.js
+Node.js
+JWT Authentication
+Next-Auth
+CRUD APIs
+Excel File Handling
+Cloudinary
+Nodemailer
+Open Library API
+
+Project Management & Collaboration:
+Agile Methodology
+Scrum
+Sprint Planning
+Retrospectives
+JIRA
+Confluence
+Git
+GitHub
+VS Code
+Postman
+Figma Collaboration
+UI/UX Best Practices
+Cross-Functional Teams
+Mentorship & Leadership
+ESLint and Prettier 
+
+Soft Skills & Impact:
+Problem Solving
+Debugging Expertise
+Technical Documentation
+Strong Communication Skills
+User-Centric Design
+Scalable Solutions
+Knowledge Sharing
+Continuous Learning
+
+More about me:
+
