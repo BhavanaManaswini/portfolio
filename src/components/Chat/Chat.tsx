@@ -38,7 +38,7 @@ const Chat = () => {
                     {messages.map((m, index) => (
                         <div key={index} className={`${m.role === "user" ? "ml-[25%]" : "mr-[25%]"}`}>
                             <li key={m.id} className={`flex ${m.role === "user" ? 'flex-row-reverse' : 'flex-row'}`}>
-                                <div className={`rounded-t-lg ${m.role === "user" ? 'rounded-t-lg' : 'rounded-r-lg'} p-1 bg-background text-foreground shadow-md w-fit overflow-hidden`}>
+                                <div className={`rounded-t-lg ${m.role === "user" ? 'rounded-l-lg' : 'rounded-r-lg'} p-1 bg-background text-foreground shadow-md w-fit overflow-hidden`}>
                                     <MyMarkdown>{m.content}</MyMarkdown>
                                 </div>
                             </li>
